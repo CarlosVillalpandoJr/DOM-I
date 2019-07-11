@@ -63,7 +63,7 @@ button.textContent = siteContent.cta['button']
 let headerImage = document.getElementById('cta-img')
 headerImage.setAttribute('src', siteContent.cta['img-src'])
 
-// main content 
+// main headings
 let mainHeaders = document.querySelectorAll('h4')
 mainHeaders[0].textContent = siteContent['main-content']['features-h4']
 mainHeaders[1].textContent = siteContent['main-content']['about-h4']
@@ -71,11 +71,25 @@ mainHeaders[2].textContent = siteContent['main-content']['services-h4']
 mainHeaders[3].textContent = siteContent['main-content']['product-h4']
 mainHeaders[4].textContent = siteContent['main-content']['vision-h4']
 
+// contact header
+mainHeaders[5].textContent = siteContent['contact']['contact-h4']
+
+// main paragraphs
 let mainParagraphs = document.querySelectorAll('p')
 mainParagraphs[0].textContent = siteContent['main-content']['features-content']
 mainParagraphs[1].textContent = siteContent['main-content']['about-content']
 mainParagraphs[2].textContent = siteContent['main-content']['services-content']
 mainParagraphs[3].textContent = siteContent['main-content']['product-content']
 mainParagraphs[4].textContent = siteContent['main-content']['vision-content']
+
+// contact paragraphs
+mainParagraphs[5].textContent = siteContent.contact['address']
+mainParagraphs[6].textContent = siteContent.contact['phone']
+mainParagraphs[7].textContent = siteContent.contact['email']
+
+// middle image
+let middleImage = document.getElementById('middle-img')
+middleImage.setAttribute('src', siteContent['main-content']['middle-img-src'])
+
 
 
