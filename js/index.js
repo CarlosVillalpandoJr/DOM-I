@@ -70,3 +70,12 @@ mainHeaders[1].textContent = siteContent['main-content']['about-h4']
 mainHeaders[2].textContent = siteContent['main-content']['services-h4']
 mainHeaders[3].textContent = siteContent['main-content']['product-h4']
 mainHeaders[4].textContent = siteContent['main-content']['vision-h4']
+
+let mainParagraphs = document.querySelectorAll('p')
+mainParagraphs[0].textContent = siteContent['main-content']['features-content']
+mainParagraphs[1].textContent = siteContent['main-content']['about-content']
+mainParagraphs[2].textContent = siteContent['main-content']['services-content']
+mainParagraphs[3].textContent = siteContent['main-content']['product-content']
+mainParagraphs[4].textContent = siteContent['main-content']['vision-content']
+
+
