@@ -99,5 +99,16 @@ mainParagraphs[7].textContent = siteContent.contact['email']
 let middleImage = document.getElementById('middle-img')
 middleImage.setAttribute('src', siteContent['main-content']['middle-img-src'])
 
+// append and prepend
+
+let headerNavigation = document.querySelector("nav")
+let addedAnchor = document.createElement("a")
+let secondAddedAnchor = document.createElement("a")
+headerNavigation.appendChild(addedAnchor)
+addedAnchor.textContent = "I am appended!"
+
+headerNavigation.prepend(secondAddedAnchor)
+secondAddedAnchor.textContent = "I am prepended!!"
+
 
 
