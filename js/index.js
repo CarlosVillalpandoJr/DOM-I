@@ -40,3 +40,75 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+// Navigation
+
+let links = document.querySelectorAll('nav a')
+
+const changeColor = () => {
+  links.forEach(element => {
+    element.style.color = 'green';
+    console.log(element);
+  })
+}
+changeColor();
+
+links[0].textContent = siteContent['nav']['nav-item-1']
+links[1].textContent = siteContent['nav']['nav-item-2']
+links[2].textContent = siteContent['nav']['nav-item-3']
+links[3].textContent = siteContent['nav']['nav-item-4']
+links[4].textContent = siteContent['nav']['nav-item-5']
+links[5].textContent = siteContent['nav']['nav-item-6']
+
+// cta
+let h1 = document.querySelector('h1');
+h1.textContent = siteContent['cta']['h1']
+
+let button = document.querySelector('button')
+button.textContent = siteContent.cta['button']
+
+let headerImage = document.getElementById('cta-img')
+headerImage.setAttribute('src', siteContent.cta['img-src'])
+
+// main headings
+let mainHeaders = document.querySelectorAll('h4')
+mainHeaders[0].textContent = siteContent['main-content']['features-h4']
+mainHeaders[1].textContent = siteContent['main-content']['about-h4']
+mainHeaders[2].textContent = siteContent['main-content']['services-h4']
+mainHeaders[3].textContent = siteContent['main-content']['product-h4']
+mainHeaders[4].textContent = siteContent['main-content']['vision-h4']
+
+// contact header
+mainHeaders[5].textContent = siteContent['contact']['contact-h4']
+
+// main paragraphs
+let mainParagraphs = document.querySelectorAll('p')
+mainParagraphs[0].textContent = siteContent['main-content']['features-content']
+mainParagraphs[1].textContent = siteContent['main-content']['about-content']
+mainParagraphs[2].textContent = siteContent['main-content']['services-content']
+mainParagraphs[3].textContent = siteContent['main-content']['product-content']
+mainParagraphs[4].textContent = siteContent['main-content']['vision-content']
+
+// contact paragraphs
+mainParagraphs[5].textContent = siteContent.contact['address']
+mainParagraphs[6].textContent = siteContent.contact['phone']
+mainParagraphs[7].textContent = siteContent.contact['email']
+
+// middle image
+let middleImage = document.getElementById('middle-img')
+middleImage.setAttribute('src', siteContent['main-content']['middle-img-src'])
+
+// append and prepend
+
+let headerNavigation = document.querySelector("nav")
+let addedAnchor = document.createElement("a")
+let secondAddedAnchor = document.createElement("a")
+headerNavigation.appendChild(addedAnchor)
+addedAnchor.textContent = "I am appended!"
+
+headerNavigation.prepend(secondAddedAnchor)
+secondAddedAnchor.textContent = "I am prepended!!"
+
+
+
