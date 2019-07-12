@@ -46,6 +46,14 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let links = document.querySelectorAll('nav a')
 
+const changeColor = () => {
+  links.forEach(element => {
+    element.style.color = 'green';
+    console.log(element);
+  })
+}
+changeColor();
+
 links[0].textContent = siteContent['nav']['nav-item-1']
 links[1].textContent = siteContent['nav']['nav-item-2']
 links[2].textContent = siteContent['nav']['nav-item-3']
